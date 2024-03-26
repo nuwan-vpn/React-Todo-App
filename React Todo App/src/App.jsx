@@ -12,29 +12,11 @@ function App() {
     <fieldset>
       <legend>Choose your tasks:</legend>
 
-      <div>
-      <input type="checkbox" id="" name="" checked />
-      <p>Paragraph 1</p>
-      <label for=""></label>
-      </div>
-
-      <div>
-      <input type="checkbox" id="" name="" />
-      <p>Paragraph 2</p>
-      <label for=""></label>
-      </div>
-
-      <div>
-      <input type="checkbox" id="" name="" />
-      <p>Paragraph 3</p>
-      <label for=""></label>
-      </div>
-
-      <div>
-      <input type="checkbox" id="" name="" />
-      <p>Paragraph 4</p>
-      <label for=""></label>
-      </div>
+      <TodoItem/>
+      <TodoItem/>
+      <TodoItem/>
+      <TodoItem/>
+    
       
     </fieldset>
     </div>

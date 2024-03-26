@@ -4,7 +4,7 @@ function TodoItem(){
     return(
         <div>
             <input type="checkbox" id="" name="" checked />
-            <p>Paragraph 1</p>
+            <p>Paragraph </p>
             <label for=""></label>
         </div>
     )
