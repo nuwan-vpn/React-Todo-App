@@ -1,0 +1,32 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif; /* Set default font family */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f0f0f0; /* Set background color */
+  }
+  
+#root {
+display: flex; /* Use flexbox for layout */
+justify-content: center; /* Center content horizontally */
+align-items: center; /* Center content vertically */
+min-height: 100vh; /* Set minimum height to fill the viewport */
+}
+  
+.todo-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+  
+.todo-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+  
+.todo-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+  
