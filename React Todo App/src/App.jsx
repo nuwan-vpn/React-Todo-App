@@ -12,16 +12,14 @@ function App() {
     <div className='todo-item'>
     <fieldset>
       <legend>Choose your tasks:</legend>
-      
+
       {todoList.map(todo => (
-          <TodoItem key={todo.id} todo={todo} />
+          <div key={todo.id}>
+            <input type="checkbox" checked={todo.completed} />
+            <label>{todo.text}</label>
+          </div>
         ))}
 
-      {/* <TodoItem/>
-      <TodoItem/>
-      <TodoItem/>
-      <TodoItem/> */}
-     
     </fieldset>
     </div>
   )
