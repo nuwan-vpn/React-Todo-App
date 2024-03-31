@@ -6,10 +6,11 @@ import todoList from './todosData'
 
 function App() {
   const [count, setCount] = useState(0)
-  
+  const todoItems = todoList.map(item => <TodoItem key={item.id} item={item}/>)
   return (
 
     <div className='todo-item'>
+     
     <fieldset>
       <legend>Choose your tasks:</legend>
 
@@ -20,6 +21,8 @@ function App() {
           </div>
         ))}
 
+      {todoItems}
+      
     </fieldset>
     </div>
   )
