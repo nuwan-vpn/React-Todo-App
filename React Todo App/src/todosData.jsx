@@ -2,7 +2,7 @@ const todoList = [
     {
         id: 1,
         text: "Complete assignment",
-        completed: false
+        completed: true
     },
     {
         id: 2,
