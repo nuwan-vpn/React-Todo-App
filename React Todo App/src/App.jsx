@@ -9,12 +9,12 @@ class App extends React.Component {
   constructor(){
     super();
     this.state={
-      todos:[]
+      todos:todoList
     }
   }
 
   render(){
-    const todoItems = todoList.map(item => <TodoItem key={item.id} item={item}/>)
+    const todoItems = this.state.todos.map(item => <TodoItem key={item.id} item={item}/>)
 
   return (
 
