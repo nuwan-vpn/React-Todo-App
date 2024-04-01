@@ -4,9 +4,17 @@ import TodoItem from './TodoItem'
 import './style.css'
 import todoList from './todosData'
 
-function App() {
-  const [count, setCount] = useState(0)
+class App extends React.Component {
+
+  constructor(){
+    super();
+    this.state={
+      todos:[]
+    }
+  }
+ 
   const todoItems = todoList.map(item => <TodoItem key={item.id} item={item}/>)
+
   return (
 
     <div className='todo-item'>
