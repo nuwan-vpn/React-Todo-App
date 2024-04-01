@@ -16,5 +16,5 @@ const todoList = [
     }
 ];
 
-console.log(todoList);
+
 export default todoList;

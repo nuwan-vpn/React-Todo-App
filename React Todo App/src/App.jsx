@@ -12,28 +12,25 @@ class App extends React.Component {
       todos:[]
     }
   }
- 
-  const todoItems = todoList.map(item => <TodoItem key={item.id} item={item}/>)
+
+  render(){
+    const todoItems = todoList.map(item => <TodoItem key={item.id} item={item}/>)
 
   return (
 
     <div className='todo-item'>
      
-    <fieldset>
-      <legend>Choose your tasks:</legend>
+      <fieldset>
+        <legend>Choose your tasks:</legend>
 
-      {todoList.map(todo => (
-          <div key={todo.id}>
-            <input type="checkbox" checked={todo.completed} />
-            <label>{todo.text}</label>
-          </div>
-        ))}
-
-      {todoItems}
-      
-    </fieldset>
+        {todoItems}
+        
+      </fieldset>
     </div>
-  )
+    )
+
+  }
+  
 }
 
 export default App
